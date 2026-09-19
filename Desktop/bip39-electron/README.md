@@ -1,6 +1,6 @@
-# BIP39 Desktop
+# BIP39 Electron
 
-A BIP39 desktop application built with Electron.
+A BIP39 application built with Electron.
 
 This project is a derivative work, inspired by and built upon the original code from the repository at https://github.com/iancoleman/bip39. 
 
@@ -15,7 +15,7 @@ This application provides a secure wallet interface for generating and managing 
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd bip39-desktop
+   cd bip39-electron
    ```
 
 2. Install dependencies:
@@ -52,7 +52,7 @@ To build the application for Linux:
 ```bash
 pnpm run build
 
-dist/bip39-desktop-0.5.65.AppImage --no-sandbox
+dist/bip39-electron-0.5.65.AppImage --no-sandbox
 ```
 
 ## Implementation

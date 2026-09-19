@@ -1,12 +1,12 @@
 {
-  "name": "bip39-desktop",
+  "name": "bip39-electron",
   "version": "0.5.65",
-  "description": "A BIP39 Desktop Application",
+  "description": "A BIP39 Electron Application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "serve": "npx http-server . -p 8000",
-    "package": "electron-packager . bip39-desktop --platform=all --arch=all --out=dist --overwrite",
+    "package": "electron-packager . bip39-electron --platform=all --arch=all --out=dist --overwrite",
     "build": "electron-builder --linux"
   },
   "devDependencies": {
