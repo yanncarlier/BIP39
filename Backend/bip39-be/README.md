@@ -2,10 +2,16 @@ This project is a derivative work, inspired by and built upon the original code 
 
 **Disclaimer: Use at Your Own Risk** This is experimental beta software and may contain bugs or exhibit unexpected behavior. It is provided "as-is" without any warranties. Use of this software is entirely at your own discretion and risk.
 
-````
-/usr/local/bin/node ./mnemonic_seed.js  
+## Run locally
 
-````
+Install dependencies with pnpm, then start the API server:
+
+```bash
+pnpm install --frozen-lockfile
+node BtcAddresses.js
+```
+
+The server listens on http://localhost:3000. Stop it with `Ctrl+C`.
 
 ## Testing the BIP39 API with curl
 
@@ -56,7 +62,6 @@ curl -X POST "http://localhost:3000/to-address" \
 ````
 
 ````
-
 
 
 
