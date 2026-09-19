@@ -31,6 +31,10 @@ To start the application in development mode:
 
 ```bash
 pnpm start
+
+or
+
+env -u ELECTRON_RUN_AS_NODE pnpm start
 ```
 
 ### Packaging
@@ -47,6 +51,8 @@ To build the application for Linux:
 
 ```bash
 pnpm run build
+
+dist/bip39-desktop-0.5.65.AppImage --no-sandbox
 ```
 
 ## Implementation
