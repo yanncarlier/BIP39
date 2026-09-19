@@ -1,12 +1,12 @@
 {
-  "name": "btc-js-desktop",
+  "name": "bip39-desktop",
   "version": "0.5.65",
-  "description": "A BTC JS Desktop Application",
+  "description": "A BIP39 Desktop Application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "serve": "npx http-server . -p 8000",
-    "package": "electron-packager . btc-js-desktop --platform=all --arch=all --out=dist --overwrite",
+    "package": "electron-packager . bip39-desktop --platform=all --arch=all --out=dist --overwrite",
     "build": "electron-builder --linux"
   },
   "devDependencies": {

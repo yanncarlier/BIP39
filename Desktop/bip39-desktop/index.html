@@ -3,12 +3,12 @@
 
     <head lang="en">
         <meta charset="utf-8" />
-        <title>BTC JS Desktop</title>
+        <title>BIP39 Desktop</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/app.css">
         <meta content="Mnemonic code for generating deterministic keys" name="description" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <meta content="BTC JS Desktop" name="description" />
+        <meta content="BIP39 Desktop" name="description" />
         <meta content="Ian Coleman" name="author" />
         <link type="image/x-icon" rel="icon"
             href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" />
@@ -21,8 +21,8 @@
 
     <body class="visual-privacy">
         <div class="container">
-            <!-- <h1 class="text-center">BTC JS Desktop</h1> -->
-            <p class="version">BTC JS Desktop - v0.5.65</p>
+            <!-- <h1 class="text-center">BIP39 Desktop</h1> -->
+            <p class="version">BIP39 Desktop - v0.5.65</p>
             <!-- <hr> -->
             <div class="row">
                 <div class="col-md-12">
@@ -34,7 +34,7 @@
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Mnemonic Language</label>
-                            <div class="col-sm-10 languages"> 
+                            <div class="col-sm-10 languages">
                                 <div class="form-control no-border">
                                     <a href="#english">English</a>
                                     <a href="#japanese" title="Japanese">日本語</a>
@@ -53,7 +53,7 @@
                             <div class="col-sm-2"></div>
                             <div class="col-sm-10">
                                 <button class="btn generate"><b>Generate Mnemonic</b></button>
-                                
+
                                 <select id="strength" class="strength form-control">
                                     <option value="3">3</option>
                                     <option value="6">6</option>
@@ -75,18 +75,20 @@
                             </div>
 
 
-                            
+
                         </div>
 
-                                                    <div class="form-group">
-                                <div class="col-sm-2"></div>
-                                <div class="col-sm-10">
-                                    <button type="button" class="privacy-screen-toggle btn">Show private info</button>  <span>This will expose your Mnemonic Seed and Private Keys on your screen when active</span>
-                                </div>
+                        <div class="form-group">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-10">
+                                <button type="button" class="privacy-screen-toggle btn">Show private info</button>
+                                <span>This will expose your Mnemonic Seed and Private Keys on your screen when
+                                    active</span>
                             </div>
+                        </div>
 
 
-                            
+
                         <div class="entropy-container hidden">
                             <div class="form-group text-danger">
                                 <label class="col-sm-2 control-label">Warning</label>
@@ -249,17 +251,19 @@
                             </div>
 
 
-                                                            <div class="form-group">
-                                    <label for="phrase" class="col-sm-2 control-label">This will store your mnemonic in the local browser vault, encrypted</label>
-                                    <div class="col-sm-10">
-                                        <input type="password" id="password" class="form-control"
-                                            placeholder="Password">
-<br>
-                                        <button id="save" type="button" class="btn generate" style="margin-left: 10px;">Save to vault</button>
-                                        <button id="load" type="button" class="btn generate" style="margin-left: 10px;">Load from vault</button>
-                                        <div id="status"></div>
-                                    </div>
+                            <div class="form-group">
+                                <label for="phrase" class="col-sm-2 control-label">This will store your mnemonic in the
+                                    local browser vault, encrypted</label>
+                                <div class="col-sm-10">
+                                    <input type="password" id="password" class="form-control" placeholder="Password">
+                                    <br>
+                                    <button id="save" type="button" class="btn generate" style="margin-left: 10px;">Save
+                                        to vault</button>
+                                    <button id="load" type="button" class="btn generate" style="margin-left: 10px;">Load
+                                        from vault</button>
+                                    <div id="status"></div>
                                 </div>
+                            </div>
 
 
                             <div class="form-group">
@@ -857,7 +861,8 @@
                     <br>
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="extended-priv-key" class="col-sm-2 control-label private-data">BIP32 Extended Private
+                            <label for="extended-priv-key" class="col-sm-2 control-label private-data">BIP32 Extended
+                                Private
                                 Key</label>
                             <div class="col-sm-10">
                                 <textarea id="extended-priv-key" class="extended-priv-key private-data form-control"
