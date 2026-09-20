@@ -55,7 +55,8 @@ patches/mtime-cache.json
 
 spec/fixtures/logo.png
 
-.yarn/install-state.gz# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+.yarn/install-state.gz
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
@@ -666,3 +667,4 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+notes.md
